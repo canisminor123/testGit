@@ -1,0 +1,262 @@
+html{
+	font-family: 'Roboto', sans-serif;
+}
+#header{
+	background-color: #ffffff;
+	width: atuo;
+	height: 100px	;
+}
+#header .row
+{
+	line-height: 80px;
+    height: 100px;
+}
+#header .header-logo{
+	height: 100px;
+
+}
+#header h1
+{
+	color: #FF0000 !important;
+	font-size: 24px !important;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+#header img{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+/*-----------------menu-nav-------------------*/
+#menu-nav
+{
+	margin-bottom: -27px;
+
+	z-index: 2;
+	width: 100%;
+}
+#menu-nav .bg-blue{
+	background-color: #0b34ffad;
+}
+#menu-nav .bg-blue a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+#menu-nav  ul li:hover a{
+	color: #FF0000;
+}
+#menu-nav .navbar .container .row{
+	justify-content: space-between;
+	width: 100%;
+	margin-left: 0;
+    margin-right: 0;
+}
+#menu-nav > nav > div > div > ul > li:nth-child(5),
+#menu-nav > nav > div > div > ul > li:nth-child(6),
+#menu-nav > nav > div > div > ul > li:nth-child(7){
+	position: relative;
+}
+#menu-nav > nav > div > div > ul > li:nth-child(5):hover .show-product,
+#menu-nav > nav > div > div > ul > li:nth-child(6):hover .show-product,
+#menu-nav > nav > div > div > ul > li:nth-child(7):hover .show-product{
+	display: block;
+}
+#menu-nav .navbar form{
+	padding-right: 0;
+}
+#menu-nav .navbar .show-product{
+	position: absolute;
+	background-color: #0b34ffad;
+	top: 55px;
+	padding-left: 20px;
+	padding-right: 20px;
+    width: max-content;
+    display: none;
+    z-index: 2;
+}
+#menu-nav .navbar .show-product li{
+	text-decoration: none;
+	list-style: none;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+
+}
+#menu-nav .navbar .show-product li i{
+	font-weight: 400;
+
+}
+#menu-nav .navbar .show-product li:hover{
+	color: #00f3fffa;
+}
+.invisiblie-bar{
+	width: 100%;
+	height: 20px;
+	background-color: transparent;
+	position: absolute;
+	top: 40px;
+	    z-index: 2;
+}
+#menu-nav .navbar .invisiblie-bar:hover .show-product{
+	display: block;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky{
+  padding-top: 10px;
+  background-color: #0b34ffed!important;
+}
+#navbar{
+	z-index: 3;
+}
+/*--------------SLIDER---------------*/
+#main{
+	margin-top: 30px;
+}
+#main h4{
+	margin-left: 20px;
+}
+.slider	{
+	
+}
+.slider #carouselExampleIndicators .carousel-inner img{
+	width: 100%;
+	height: 600px;
+}
+#main .side-bar-bg {
+	width: 100%;
+	height: 100%;
+	background-color: #efefefd9;
+}
+/*----------------------------------sidebar---------------------------*/
+#main .side-bar-bg h6{
+	margin-left: -15px;
+	margin-top: 15px !important;
+}
+#main .side-bar-bg .side-bar-price,
+#main .side-bar-bg .side-bar-type{
+	padding-left: 40px;
+}	
+	/* The container */
+#main .side-bar-bg .side-bar-price .contain,
+#main .side-bar-bg .side-bar-type .contain {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+#main .side-bar-bg .side-bar-price .contain input,
+#main .side-bar-bg .side-bar-type .contain input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+#main .side-bar-bg .side-bar-price .checkmark,
+#main .side-bar-bg .side-bar-type .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color:	#adadad;
+  margin-top: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+ #main .side-bar-bg .side-bar-price .contain:hover input ~ .checkmark,
+  #main .side-bar-bg .side-bar-type .contain:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+#main .side-bar-bg .side-bar-price .contain input:checked ~ .checkmark,
+#main .side-bar-bg .side-bar-type .contain input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+#main .side-bar-bg .side-bar-price .checkmark:after,
+#main .side-bar-bg .side-bar-type .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+#main .side-bar-bg .side-bar-price .contain input:checked ~ .checkmark:after,
+#main .side-bar-bg .side-bar-type .contain input:checked ~ .checkmark:after{
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+#main .side-bar-bg .side-bar-price .contain .checkmark:after,
+#main .side-bar-bg .side-bar-type .contain .checkmark:after {
+	
+}
+
+/*--------------END SIDEBAR--------------------*/
+#main .popular-products .list-products .product,
+#main .popular-products .list-products-popular .product{
+	max-height: 365px;
+}
+#main .popular-products .mg-40{
+	margin-top: 40px;
+}
+#main .popular-products .list-products .product img,
+#main .popular-products .list-products-popular .product img{
+	width: auto;
+	max-height: 250px;
+}
+#main .popular-products .list-products .product .product-info,
+#main .popular-products .list-products-popular .product .product-info{
+	font-size: 14px;
+
+}
+#main .popular-products .list-products .product a,
+#main .popular-products .list-products-popular .product a{
+	text-decoration: none;
+	color: #000;
+}
+#main .popular-products .list-products .product .product-name,
+#main .popular-products .list-products-popular .product .product-name{
+	font-weight: 600;
+}
+/*-------------------intro-------------------*/
+.intro .container{
+	padding-right: 30px;
+	padding-left: 30px;
+}
+.intro .container h4{
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 60px;
+}
+.owl-theme .owl-dots .owl-dot span{
+	display: none !important;
+}
+/*-------------------footer-------------------*/
+#footer
+{	
+	padding-top: 30px;
+	background-color: #f1f1f1;
+}
+
+#footer .footer-logo {
+	padding: 0;
+}
